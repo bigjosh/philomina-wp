@@ -23,6 +23,11 @@
 		$('.not-home').css({'margin-top': -block_height});
 		$('body > section').css({height:block_height});
 		$('.block').css({height:block_height});
+        // Make the post images into squares
+		$('.block post').each(function(){
+			$(this).css({"height": $(this).width()});
+			$(this).css({"josh": 20});            
+		})        
 		$('.inside_block h1').each(function(){
 			block_text_center = (block_height / 2) - [($(this).height() + 37) /2];
 			$(this).css({"margin-top": block_text_center});
